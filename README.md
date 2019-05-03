@@ -17,8 +17,8 @@ Algunos de estos pains son:
 
 Este proyecto está enfocado en resolver esos pains a través de una interfaz pensada y diseñada para la interacción rápida e intuitiva entre el usuario y el producto.
 
-## Burguer Queen
-Burque Queen es una cadena de comida 24hrs.
+## Burger Queen
+Burger Queen es una cadena de comida 24hrs.
 
 Su propuesta de servicio 24hrs ha tenido muy buena acogida y para seguir creciendo, requieren  un sistema que nos ayude a tomar los pedidos de nuestros clientes.
 
@@ -31,8 +31,7 @@ y la interacción natural entre el usuario y el producto.
 
 ## Diseño de experiencia de Usuario (UX)/ Prototipo
 
-![out](assets\aec5fd74165f49babbc4f629aeaa290a.mp4)
-
+[Prototipo](https://docs.google.com/presentation/d/1ZuETPiEz5vgDi07HP5v7x1YepmUEQHn4Tnv469jIKlk/edit#slide=id.g57ee78702d_0_12)
 ## Aspectos Técnicos
 Herramientas a utilizar:
 - Firebase
