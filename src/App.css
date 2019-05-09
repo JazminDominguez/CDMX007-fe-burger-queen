@@ -1,4 +1,7 @@
 .App {
+  background-color: rgb(36,46,58);
+  height: 768px;
+  width: 1024px;
   text-align: center;
 }
 
@@ -30,4 +33,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.menuButtonSize{
+  height: 80px;
+  width: 80px;
+ 
+
+}
+.basicBurger{
+  background-color: rgb(234,177,38);
+  background-image: url(/icons/72.png);
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.dobleBurger{
+  background-color: rgb(255,106,92);
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.foodSection{
+  height: 180px;
+  width: 330px;
+  right: -30px;
+  top: 120px;
+  position: relative;
 }

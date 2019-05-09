@@ -1,12 +1,10 @@
 {
-    "type": "menu",
-    "format": "standAloneComplex",
-    "version": "6.24.1",
-    "data": {
-        "breakfast": {
+       "breakfast": [{
             "food": {
-                "name": "Sandwich de jamón y queso",
-                "price": 10
+                "Sandwich": {
+                    "name": "Sandwich de jamón y queso",
+                    "price": 10
+                }
             },
             "beverage": {
                 "CoffeeA": {
@@ -22,8 +20,8 @@
                     "price": 7
                 }
             }
-        },
-        "latemenu": {
+        }],
+        "latemenu": [{
             "food": {
                 "BurgerS": {
                     "name": "Hamburguesa Simple",
@@ -62,6 +60,5 @@
                     "price": 5
                 }
             }
-        }
+        }]
     }
-}
