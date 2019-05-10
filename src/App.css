@@ -57,16 +57,16 @@
 .foodSection{
   height: 180px;
   width: 330px;
-  right: -30px;
+  margin-left: 31px;
   top: 120px;
-  position: relative;
+  position: fixed;
 }
 
 .optionMenu{
   background-color: rgb(56,64,74);
   height: 180px;
   width: 668px;
-  top: 408px;
+  top: 489px;
   position: relative;
 }
 
@@ -110,9 +110,10 @@
 }
 
 
-/* rgb(164,212,180)
-  rgb(192,218,122)
-  rgb(192,141,186)
-  rgb(237,221,76)
-  rgb(32,148,139)
-  rgb(32,148,139)*/
+.ticket_area{
+  background-color: rgb(56,64,74);
+  left: 152px;
+  height: 700px;
+  width: 300px;
+  position: absolute;
+}
