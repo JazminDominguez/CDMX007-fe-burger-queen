@@ -5,7 +5,7 @@ import './App.css';
 import ReusableButton from './components/example_button'
 import MenuComponent from './components/orderbutton'
 import LowerOptions from './components/LowerOptions'
-
+import TicketSection from './components/LowerOptions'
 
 
 class ReusableComponents extends React.Component {
@@ -39,6 +39,11 @@ class ReusableComponents extends React.Component {
 
         </div>
 
+        <TicketSection className={"ticket_area btn low_button ok"}>
+    </TicketSection>
+    
+
+
         <div className="optionMenu">
           <LowerOptions className={"btn low_button platillo"}></LowerOptions>
           <LowerOptions className={"btn low_button bebida"}></LowerOptions>
@@ -48,6 +53,9 @@ class ReusableComponents extends React.Component {
           <LowerOptions className={"btn low_button no_ingredientes"}></LowerOptions>
         </div>
       </div>
+
+    
+  
 
 
     )
