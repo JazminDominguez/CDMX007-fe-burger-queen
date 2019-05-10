@@ -1,4 +1,7 @@
 .App {
+  background-color: rgb(36,46,58);
+  height: 768px;
+  width: 1024px;
   text-align: center;
 }
 
@@ -31,3 +34,85 @@
     transform: rotate(360deg);
   }
 }
+
+.menuButtonSize{
+  height: 80px;
+  width: 80px;
+ 
+
+}
+.basicBurger{
+  background-color: rgb(234,177,38);
+  background-image: url(/icons/72.png);
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.dobleBurger{
+  background-color: rgb(255,106,92);
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.foodSection{
+  height: 180px;
+  width: 330px;
+  right: -30px;
+  top: 120px;
+  position: relative;
+}
+
+.optionMenu{
+  background-color: rgb(56,64,74);
+  height: 180px;
+  width: 668px;
+  top: 408px;
+  position: relative;
+}
+
+.low_button{
+  height: 61px;
+  width: 122px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.low_button_position{
+  position: relative;
+  display: inline-block;
+
+}
+
+.platillo{
+  background-color: gray;
+ 
+}
+
+.bebida{
+  background-color: rgb(32,148,139);
+}
+
+.guarnicion{
+  background-color: rgb(192,141,186)
+}
+.ok{
+  background-color: rgb(164,212,180)
+}
+.extra{
+  background-color: rgb(237,221,76);
+  right: 150px;
+  position: relative;
+}
+.no_ingredientes{
+  background-color:  rgb(192,218,122);  
+  right: 150px;
+  position: relative;
+}
+
+
+/* rgb(164,212,180)
+  rgb(192,218,122)
+  rgb(192,141,186)
+  rgb(237,221,76)
+  rgb(32,148,139)
+  rgb(32,148,139)*/

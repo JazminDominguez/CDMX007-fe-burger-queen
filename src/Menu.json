@@ -1,12 +1,10 @@
-{
-    "type": "menu",
-    "format": "standAloneComplex",
-    "version": "6.24.1",
-    "data": {
-        "breakfast": {
+{ "Menu" :{
+       "breakfast": [{
             "food": {
-                "name": "Sandwich de jamón y queso",
-                "price": 10
+                "Sandwich": {
+                    "name": "Sandwich de jamón y queso",
+                    "price": 10
+                }
             },
             "beverage": {
                 "CoffeeA": {
@@ -22,14 +20,30 @@
                     "price": 7
                 }
             }
-        },
-        "latemenu": {
+        }],
+        "latemenu": [{
             "food": {
-                "BurgerS": {
-                    "name": "Hamburguesa Simple",
+                "BurgerSR": {
+                    "name": "Sencilla Res",
                     "price": 10
                 },
-                "BurgerD": {
+                "BurgerSP": {
+                    "name": "Sencilla Pollo",
+                    "price": 10
+                },
+                "BurgerSV": {
+                    "name": "Sencilla Vegetariana",
+                    "price": 10
+                },
+                "BurgerDR": {
+                    "name": "Hamburguesa Doble",
+                    "price": 10
+                },
+                "BurgerDP": {
+                    "name": "Hamburguesa Doble",
+                    "price": 10
+                },
+                "BurgerDV": {
                     "name": "Hamburguesa Doble",
                     "price": 10
                 }
@@ -62,6 +76,6 @@
                     "price": 5
                 }
             }
-        }
+        }]
     }
 }
