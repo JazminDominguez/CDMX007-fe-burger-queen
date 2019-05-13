@@ -2,10 +2,11 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import ReusableButton from './components/example_button'
-import MenuComponent from './components/orderbutton'
+import ReusableButton from './components/MenuButtons'
 import LowerOptions from './components/LowerOptions'
-import TicketSection from './components/LowerOptions'
+import TicketArea from './components/TicketArea'
+import TicketHead from './components/TicketHeader'
+import TicketButton from './components/TicketButtons'
 
 
 class ReusableComponents extends React.Component {
@@ -39,9 +40,11 @@ class ReusableComponents extends React.Component {
 
         </div>
 
-        <TicketSection className={"ticket_area btn low_button ok"}>
-    </TicketSection>
-    
+        <div className="ticket_area">
+        <TicketHead className={"ticket_area"}> </TicketHead>
+        <TicketArea></TicketArea>
+        <TicketButton></TicketButton>
+        </div>
 
 
         <div className="optionMenu">

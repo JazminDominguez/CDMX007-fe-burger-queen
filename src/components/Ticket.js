@@ -18,4 +18,4 @@ const TicketSection = (props) => {
     )
 }
 
-export default icketSection;
+export default TicketSection;
