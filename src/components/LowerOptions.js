@@ -1,9 +1,4 @@
 import React from 'react';
-//import Menu from ' .Menu.js';
-
-
-
-
 
 const LowerMenu =(props) =>{
     return(

@@ -7,7 +7,7 @@ import LowerOptions from './components/LowerOptions'
 import TicketArea from './components/TicketArea'
 import TicketHead from './components/TicketHeader'
 import TicketButton from './components/TicketButtons'
-
+import TicketUser from './components/TicketUser'
 
 class ReusableComponents extends React.Component {
 
@@ -42,13 +42,15 @@ class ReusableComponents extends React.Component {
 
         <div className="ticket_area">
         <TicketHead className={"ticket_area"}> </TicketHead>
+        <TicketUser></TicketUser>
         <TicketArea></TicketArea>
         <TicketButton></TicketButton>
         </div>
 
+       
 
         <div className="optionMenu">
-          <LowerOptions className={"btn low_button platillo"}></LowerOptions>
+          <LowerOptions className={"btn low_button platillo"}>Platillo</LowerOptions>
           <LowerOptions className={"btn low_button bebida"}></LowerOptions>
           <LowerOptions className={"btn low_button guarnicion"}></LowerOptions>
           <LowerOptions className={"btn low_button ok"}></LowerOptions>
@@ -64,19 +66,6 @@ class ReusableComponents extends React.Component {
     )
   }
 }
-/*
-class LowerComponents extends React.Component {
 
-  onClick() {
-    alert("Button was clicked");
-  }
-
-  render() {
-    return (
-      <div className="optionMenu">
-      <LowerOptions className={"btn platillo"}></LowerOptions>
-      </div>
-    )}}
-    */
 export default ReusableComponents;
 

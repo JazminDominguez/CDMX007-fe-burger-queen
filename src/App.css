@@ -120,3 +120,38 @@
   width: 300px;
   position: absolute;
 }
+.ticket_icon_user{
+  background-color: rgb(36,46,58);
+  height: 40px;
+  width: 300px;
+
+
+}
+
+.icons{
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 40px;
+}
+.menu_icon{
+  background-image: url(./icons/menu40.png);
+  margin-top: 10px
+}
+.gear_icon{
+  background-image: url(./icons/gear40.png);
+}
+.signout_icon{
+  background-image: url(./icons/signout40.png);
+}
+.user_icon{
+  background-image: url(./icons/user40.png);
+position: fixed;
+right: 280px;
+}
+
+.client_name{
+  position: relative;
+  top: 5px;
+}
