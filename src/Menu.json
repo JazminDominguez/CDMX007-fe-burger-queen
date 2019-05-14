@@ -1,81 +1,114 @@
-{ "Menu" :{
-       "breakfast": [{
-            "food": {
-                "Sandwich": {
-                    "name": "Sandwich de jamón y queso",
-                    "price": 10
-                }
-            },
-            "beverage": {
-                "CoffeeA": {
-                    "name": "Café americano",
-                    "price": 5
-                },
-                "CoffeeL": {
-                    "name": "Café con Leche",
-                    "price": 7
-                },
-                "Juice": {
-                    "name": "Jugo de frutas natural",
-                    "price": 7
-                }
-            }
-        }],
-        "latemenu": [{
-            "food": {
-                "BurgerSR": {
-                    "name": "Sencilla Res",
-                    "price": 10
-                },
-                "BurgerSP": {
-                    "name": "Sencilla Pollo",
-                    "price": 10
-                },
-                "BurgerSV": {
-                    "name": "Sencilla Vegetariana",
-                    "price": 10
-                },
-                "BurgerDR": {
-                    "name": "Hamburguesa Doble",
-                    "price": 10
-                },
-                "BurgerDP": {
-                    "name": "Hamburguesa Doble",
-                    "price": 10
-                },
-                "BurgerDV": {
-                    "name": "Hamburguesa Doble",
-                    "price": 10
-                }
-            },
-            "beverage": {
-                "Water500": {
-                    "name": "Agua 500ml",
-                    "price": 5
-                },
-                "Wate750": {
-                    "name": "Agua 750ml",
-                    "price": 7
-                },
-                "Soda500": {
-                    "name": "Soda 500ml",
-                    "price": 7
-                },
-                "Soda750": {
-                    "name": "Soda 750ml",
-                    "price": 10
-                }
-            },
-            "addings": {
-                "Ffries": {
-                    "name": "Papas fritas",
-                    "price": 5
-                },
-                "Ronion": {
-                    "name": "Aros de cebolla",
-                    "price": 5
-                }
-            }
-        }]
+[
+    {
+        "id": "b1",
+        "name": "café americano",
+        "type": "beverage",
+        "time": "breakfast",
+        "price": 5,
+        "selected": false
+    },
+    {
+        "id": "b1",
+        "name": "café con leche",
+        "type": "beverage",
+        "time": "breakfast",
+        "price": 7,
+        "selected": false
+    },
+    {
+        "id": "b3",
+        "name": "sandwich de jamón con queso",
+        "type": "food",
+        "time": "breakfast",
+        "price": 10,
+        "selected": false
+    },
+    {
+        "id": "b4",
+        "name": "jugo de frutas natural",
+        "type": "food",
+        "time": "breakfast",
+        "price": 7,
+        "selected": false
+    },
+    {
+        "id": "m1",
+        "name": "hamburguesa simple",
+        "type": "food",
+        "time": "meal",
+        "price": 10,
+        "selected": false
+    },
+    {
+        "id": "m2",
+        "name": "hamburguesa doble",
+        "type": "food",
+        "time": "meal",
+        "price": 15,
+        "selected": false
+    },
+    {
+        "id": "m3",
+        "name": "papas fritas",
+        "type": "addings",
+        "time": "meal",
+        "price": 5,
+        "selected": false
+    },
+    {
+        "id": "m4",
+        "name": "aros de cebolla",
+        "type": "addings",
+        "time": "meal",
+        "price": 5,
+        "selected": false
+    },
+    {
+        "id": "m5",
+        "name": "agua 500ml",
+        "type": "beverage",
+        "time": "meal",
+        "price": 5,
+        "selected": false
+    },
+    {
+        "id": "m6",
+        "name": "agua 750ml",
+        "type": "beverage",
+        "time": "meal",
+        "price": 7,
+        "selected": false
+    },
+    {
+        "id": "m7",
+        "name": "gaseosa 500ml",
+        "type": "beverage",
+        "time": "meal",
+        "price": 7,
+        "selected": false
+    },
+    {
+        "id": "m8",
+        "name": "gaseosa 750ml",
+        "type": "beverage",
+        "time": "meal",
+        "price": 10,
+        "selected": false
+    },
+    {
+        "id": "ext1",
+        "name": "queso",
+        "type": "extras",
+        "time": "any",
+        "price": 1,
+        "selected": false
+    },
+    {
+        "id": "ext2",
+        "name": "huevo",
+        "type": "extras",
+        "time": "any",
+        "price": 1,
+        "selected": false
     }
-}
+]

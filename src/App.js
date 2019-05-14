@@ -2,11 +2,12 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import ReusableButton from './components/example_button'
-import MenuComponent from './components/orderbutton'
+import ReusableButton from './components/MenuButtons'
 import LowerOptions from './components/LowerOptions'
-import TicketSection from './components/LowerOptions'
-
+import TicketArea from './components/TicketArea'
+import TicketHead from './components/TicketHeader'
+import TicketButton from './components/TicketButtons'
+import TicketUser from './components/TicketUser'
 
 class ReusableComponents extends React.Component {
 
@@ -39,13 +40,17 @@ class ReusableComponents extends React.Component {
 
         </div>
 
-        <TicketSection className={"ticket_area btn low_button ok"}>
-    </TicketSection>
-    
+        <div className="ticket_area">
+        <TicketHead className={"ticket_area"}> </TicketHead>
+        <TicketUser></TicketUser>
+        <TicketArea></TicketArea>
+        <TicketButton></TicketButton>
+        </div>
 
+       
 
         <div className="optionMenu">
-          <LowerOptions className={"btn low_button platillo"}></LowerOptions>
+          <LowerOptions className={"btn low_button platillo"}>Platillo</LowerOptions>
           <LowerOptions className={"btn low_button bebida"}></LowerOptions>
           <LowerOptions className={"btn low_button guarnicion"}></LowerOptions>
           <LowerOptions className={"btn low_button ok"}></LowerOptions>
@@ -61,19 +66,6 @@ class ReusableComponents extends React.Component {
     )
   }
 }
-/*
-class LowerComponents extends React.Component {
 
-  onClick() {
-    alert("Button was clicked");
-  }
-
-  render() {
-    return (
-      <div className="optionMenu">
-      <LowerOptions className={"btn platillo"}></LowerOptions>
-      </div>
-    )}}
-    */
 export default ReusableComponents;
 
