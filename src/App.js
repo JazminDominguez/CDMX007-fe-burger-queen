@@ -8,6 +8,11 @@ import TicketArea from './components/TicketArea'
 import TicketHead from './components/TicketHeader'
 import TicketButton from './components/TicketButtons'
 import TicketUser from './components/TicketUser'
+import Header from './components/Encabezado'
+import ItemList from './components/FetchedJSON'
+
+
+
 
 class ReusableComponents extends React.Component {
 
@@ -18,7 +23,10 @@ class ReusableComponents extends React.Component {
   render() {
     return (
       <div className="App">
+      <Header></Header>
+
         <div className="foodSection">
+        <ItemList></ItemList>
           <ReusableButton className={"btn basicBurger menuButtonSize"} onClick={this.onClick}>
             Button 1
           </ReusableButton>
@@ -50,12 +58,7 @@ class ReusableComponents extends React.Component {
        
 
         <div className="optionMenu">
-          <LowerOptions className={"btn low_button platillo"}>Platillo</LowerOptions>
-          <LowerOptions className={"btn low_button bebida"}></LowerOptions>
-          <LowerOptions className={"btn low_button guarnicion"}></LowerOptions>
-          <LowerOptions className={"btn low_button ok"}></LowerOptions>
-          <LowerOptions className={"btn low_button extra"}></LowerOptions>
-          <LowerOptions className={"btn low_button no_ingredientes"}></LowerOptions>
+          <LowerOptions ></LowerOptions>
         </div>
       </div>
 

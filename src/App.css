@@ -38,6 +38,26 @@
   }
 }
 
+
+.header_area{
+ height: 70px;
+ width: 663px;
+ position: fixed;
+}
+
+.title{
+  background-color: rgb(56,64,74);
+height: 35px;
+ width: 663px;
+ }
+
+ .numbers{
+  background-color: rgb(36,46,58);
+  height: 35px;
+   width: 663px;
+   }
+ 
+
 .menuButtonSize{
   height: 80px;
   width: 80px;
@@ -154,4 +174,14 @@ right: 280px;
 .client_name{
   position: relative;
   top: 5px;
+}
+
+.count_area{
+  height: 250px;
+  width: 60px;
+}
+
+.ticket_button_area{
+  position: relative;
+  bottom: 120px;
 }
