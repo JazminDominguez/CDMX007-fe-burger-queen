@@ -1,19 +1,31 @@
 import React from 'react';
 
-const LowerMenu =(props) =>{
-    return(
-        <div className="low_button_position">
 
-        <button type="button" className={"btn low_button platillo"}>Platillo</button>
-          <button type="button" className={"btn low_button bebida"}>Bebida</button>
-          <button type="button" className={"btn low_button guarnicion"}>Guarnición</button>
-          <button type="button" className={"btn low_button ok"}>OK</button>
-          <button type="button" className={"btn low_button extra"}>Extras</button>
-          <button type="button" className={"btn low_button no_ingredientes"}>Sin Ingredientes</button>
-        </div>
+
+
+
+
+const MenuTypes =(props) =>{
+  
+  let types = this.state.itemList.filter( function (itemList) {
+    return itemList.time === {props}
+  });
+
+  const typeMap = types.map((itemList, i)=> {
+    return ( 
+      <button key={i} id={itemList.id} className={"btn basicBurger menuButtonSize"} onClick={this.onClickOptions}>
+      {itemList.name}
+      </button>
+    )})
+  
+    return(
+      {typeMap}
+
+  
+
     )
 }
-export default LowerMenu;
+export default MenuTypes;
 /*
 LowerMenu.propTypes = {
     name: PropTypes.string,

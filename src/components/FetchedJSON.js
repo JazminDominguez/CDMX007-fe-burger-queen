@@ -1,6 +1,7 @@
 import React from 'react';
-
 import axios from 'axios';
+import ReusableButton from '../components/MenuButtons'
+
 
 
 export default class ItemList extends React.Component {
@@ -13,14 +14,19 @@ export default class ItemList extends React.Component {
       .then(res => {
         const items = res.data;
         this.setState({ items });
+        console.log(items)
       })
   }
 
   render() {
     return (
-      <ul className="fuente">
-        { this.state.items.map(items => <li key={items.id}>{items.name}</li>)}
-      </ul>
+      
+        this.state.items.map(items => {
+          return(
+            <ReusableButton className={"btn basicBurger menuButtonSize"} onClick={this.onClick} >{items.name}</ReusableButton>
+          )
+        } )
+ 
     )
   }
 }

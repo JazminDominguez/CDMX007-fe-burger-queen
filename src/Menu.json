@@ -1,10 +1,11 @@
-[
+{ "itemList": [
     {
         "id": "b1",
         "name": "café americano",
         "type": "beverage",
         "time": "breakfast",
         "price": 5,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -13,6 +14,7 @@
         "type": "beverage",
         "time": "breakfast",
         "price": 7,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -21,14 +23,16 @@
         "type": "food",
         "time": "breakfast",
         "price": 10,
+        "quantity": 0,
         "selected": false
     },
     {
         "id": "b4",
         "name": "jugo de frutas natural",
-        "type": "food",
+        "type": "beverage",
         "time": "breakfast",
         "price": 7,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -37,6 +41,7 @@
         "type": "food",
         "time": "meal",
         "price": 10,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -45,6 +50,7 @@
         "type": "food",
         "time": "meal",
         "price": 15,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -53,6 +59,7 @@
         "type": "addings",
         "time": "meal",
         "price": 5,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -61,6 +68,7 @@
         "type": "addings",
         "time": "meal",
         "price": 5,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -69,6 +77,7 @@
         "type": "beverage",
         "time": "meal",
         "price": 5,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -77,6 +86,7 @@
         "type": "beverage",
         "time": "meal",
         "price": 7,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -85,6 +95,7 @@
         "type": "beverage",
         "time": "meal",
         "price": 7,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -93,6 +104,7 @@
         "type": "beverage",
         "time": "meal",
         "price": 10,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -101,6 +113,7 @@
         "type": "extras",
         "time": "any",
         "price": 1,
+        "quantity": 0,
         "selected": false
     },
     {
@@ -109,6 +122,44 @@
         "type": "extras",
         "time": "any",
         "price": 1,
+        "quantity": 0,
         "selected": false
-    }
-]
+    },
+    {
+        "id": "ing1",
+        "name": "lechuga",
+        "type": "ingredients",
+        "time": "any",
+        "price": 0,
+        "quantity": 0,
+        "selected": false
+    },
+    {
+        "id": "ing2",
+        "name": "cebolla",
+        "type": "ingredients",
+        "time": "any",
+        "price": 0,
+        "quantity": 0,
+        "selected": false
+    },
+    {
+        "id": "ing3",
+        "name": "pepinillos",
+        "type": "ingredients",
+        "time": "any",
+        "price": 0,
+        "quantity": 0,
+        "selected": false
+    },
+    {
+        "id": "ing4",
+        "name": "jitomate",
+        "type": "ingredients",
+        "time": "any",
+        "price": 0,
+        "quantity": 0,
+        "selected": false
+    }  
+
+]}
