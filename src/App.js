@@ -9,7 +9,7 @@ import TicketHead from './components/TicketHeader'
 import TicketButton from './components/TicketButtons'
 import TicketUser from './components/TicketUser'
 import Header from './components/Encabezado'
-//import ItemList from './components/FetchedJSON'
+import Products from './components/FetchedJSON'
 import { itemList } from './Menu'
 console.log(itemList)
 
@@ -61,7 +61,7 @@ class App extends React.Component {
       return itemList.type === 'food' && itemList.time === "meal"
     });
     const foodList = foodFilter.map((itemList, i) => {
-      return <div key={itemList.id} id={itemList.id} className={"btn basicBurger menuButtonSize"} onClick={this.onClickOptions}> <span className="button_text">{itemList.name}</span> </div>
+      return <div  key={itemList.id} id={itemList.id} className={"btn text-break basicBurger menuButtonSize"} onClick={this.onClickOptions}><p>{itemList.name}</p> </div>
     })
     //ingredientes---
     let ingredientsFilter = this.state.itemList.filter((itemList, i) => {
@@ -104,7 +104,8 @@ class App extends React.Component {
         <div className="foodSection">
 
           <div className="list_placement"> <p className="fuente list_name">Hamburguesas</p>
-            {foodList}
+            
+            <Products></Products>
           </div>
           <div className="list_placement"> <p className="fuente list_name">Sin ingredientes</p>
             {ingridientsList}
@@ -124,11 +125,11 @@ class App extends React.Component {
         <div className="ticket_area">
 
           <TicketHead className={"ticket_area"}> </TicketHead>
-          <TicketUser></TicketUser>
+          <TicketUser/>
           <TicketArea>
 
           </TicketArea>
-          <TicketButton></TicketButton>
+          <TicketButton/>
         </div>
 
 

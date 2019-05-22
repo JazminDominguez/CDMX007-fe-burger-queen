@@ -4,29 +4,29 @@ import ReusableButton from '../components/MenuButtons'
 
 
 
-export default class ItemList extends React.Component {
+export default class Products extends React.Component {
   state = {
-    items: []
+         items: []
+    }
+  
+    componentDidMount() {
+      axios.get(`./menu.json`)
+        .then(res => {
+          const items = res.data;
+          this.setState({ items });
+          console.log(items)
+        })
+    }
+  
+    render() {
+      return (
+        
+          this.state.items.map(items => {
+            return(
+              <button className={"btn basicBurger menuButtonSize"} onClick={this.onClick} >{items.name}</button>
+            )
+          } )
+   
+      )
+    }
   }
-
-  componentDidMount() {
-    axios.get(`./menu.json`)
-      .then(res => {
-        const items = res.data;
-        this.setState({ items });
-        console.log(items)
-      })
-  }
-
-  render() {
-    return (
-      
-        this.state.items.map(items => {
-          return(
-            <ReusableButton className={"btn basicBurger menuButtonSize"} onClick={this.onClick} >{items.name}</ReusableButton>
-          )
-        } )
- 
-    )
-  }
-}
