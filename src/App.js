@@ -3,69 +3,146 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import ReusableButton from './components/MenuButtons'
-import LowerOptions from './components/LowerOptions'
+import MenuTypes from './components/LowerOptions'
 import TicketArea from './components/TicketArea'
 import TicketHead from './components/TicketHeader'
 import TicketButton from './components/TicketButtons'
 import TicketUser from './components/TicketUser'
+import Header from './components/Encabezado'
+import Products from './components/FetchedJSON'
+import { itemList } from './Menu'
+console.log(itemList)
 
-class ReusableComponents extends React.Component {
 
-  onClick() {
-    alert("Button was clicked");
+
+class App extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      itemList
+    };
+    this.onClickOptions = this.onClickOptions.bind(this);
+
   }
 
+
+  onClickOptions = (e) => {
+    console.log(e.target.id);
+  }
+
+  typeButtons(e) {
+    console.log(e.target.id);
+  }
   render() {
+
+    const itemType = {
+      food: 'food',
+      drink: 'beverage',
+      addings: 'addings',
+      extras: 'extras',
+      noIngridient: 'ingridient',
+      breakfast: 'breakfast',
+      meal: 'meal'
+    };
+
+
+
+
+    let filterByTime = this.state.itemList.filter((itemList, i) => {
+      return itemList.time === "meal"
+    });
+    const time = filterByTime.map((itemList, i) => {
+      return <button key={itemList.id} id={itemList.id} className={"btn basicBurger menuButtonSize"} onClick={this.onClickOptions}> {itemList.name} </button>
+    })
+
+    //comida---
+    let foodFilter = this.state.itemList.filter((itemList, i) => {
+      return itemList.type === 'food' && itemList.time === "meal"
+    });
+    const foodList = foodFilter.map((itemList, i) => {
+      return <div  key={itemList.id} id={itemList.id} className={"btn text-break basicBurger menuButtonSize"} onClick={this.onClickOptions}><p>{itemList.name}</p> </div>
+    })
+    //ingredientes---
+    let ingredientsFilter = this.state.itemList.filter((itemList, i) => {
+      return itemList.type === 'ingredients'
+    });
+    const ingridientsList = ingredientsFilter.map((itemList, i) => {
+      return <button key={itemList.id} id={itemList.id} className={"btn no_ing menuButtonSize"} onClick={this.onClickOptions}> {itemList.name} </button>
+    })
+    //extras---
+    let extrasFilter = this.state.itemList.filter((itemList, i) => {
+      return itemList.type === 'extras'
+    });
+    const extrasList = extrasFilter.map((itemList, i) => {
+      return <button key={itemList.id} id={itemList.id} className={"btn extra menuButtonSize"} onClick={this.onClickOptions}> {itemList.name} </button>
+    })
+    //guarnición---
+    let addingsFilter = this.state.itemList.filter((itemList, i) => {
+      return itemList.type === 'addings' && itemList.time === "meal"
+    });
+    const addingsList = addingsFilter.map((itemList, i) => {
+      return <button key={itemList.id} id={itemList.id} className={"btn guarnicion menuButtonSize"} onClick={this.onClickOptions}> {itemList.name} </button>
+    })
+    //bebidas---
+    let drinksFilter = this.state.itemList.filter((itemList, i) => {
+      return itemList.type === 'beverage' && itemList.time === "meal"
+    });
+    const drinksList = drinksFilter.map((itemList, i) => {
+      return <button key={itemList.id} id={itemList.id} className={"btn bebida menuButtonSize"} onClick={this.onClickOptions}> {itemList.name} </button>
+    })
+
+    console.log('este es el map del filtrado', time)
+
+
     return (
       <div className="App">
+        <Header>
+
+        </Header>
+
         <div className="foodSection">
-          <ReusableButton className={"btn basicBurger menuButtonSize"} onClick={this.onClick}>
-            Button 1
-          </ReusableButton>
-          <ReusableButton className={"btn basicBurger menuButtonSize"} onClick={this.onClick} >
-            Button 2
-</ReusableButton>
-          <ReusableButton className={"btn basicBurger menuButtonSize"} onClick={this.onClick}>
-            Button 3
-</ReusableButton>
-          <ReusableButton className={"btn dobleBurger menuButtonSize"} onClick={this.onClick} >
-            Button 4
-</ReusableButton>
-          <ReusableButton className={"btn dobleBurger menuButtonSize"} onClick={this.onClick} >
-            Button 5
-</ReusableButton>
-          <ReusableButton className={"btn dobleBurger menuButtonSize"} onClick={this.onClick} >
-            Button 6
-</ReusableButton>
+
+          <div className="list_placement"> <p className="fuente list_name">Hamburguesas</p>
+            
+            <Products></Products>
+          </div>
+          <div className="list_placement"> <p className="fuente list_name">Sin ingredientes</p>
+            {ingridientsList}
+          </div>
+          <div className="list_placement"> <p className="fuente list_name">extras</p>
+            {extrasList}
+          </div>
+          <div className="list_placement"> <p className="fuente list_name">Guarnición</p>
+            {addingsList}
+          </div>
+          <div className="list_placement"> <p className="fuente list_name">Bebidas</p>
+            {drinksList}
+          </div>
 
         </div>
 
         <div className="ticket_area">
-        <TicketHead className={"ticket_area"}> </TicketHead>
-        <TicketUser></TicketUser>
-        <TicketArea></TicketArea>
-        <TicketButton></TicketButton>
+
+          <TicketHead className={"ticket_area"}> </TicketHead>
+          <TicketUser/>
+          <TicketArea>
+
+          </TicketArea>
+          <TicketButton/>
         </div>
 
-       
 
-        <div className="optionMenu">
-          <LowerOptions className={"btn low_button platillo"}>Platillo</LowerOptions>
-          <LowerOptions className={"btn low_button bebida"}></LowerOptions>
-          <LowerOptions className={"btn low_button guarnicion"}></LowerOptions>
-          <LowerOptions className={"btn low_button ok"}></LowerOptions>
-          <LowerOptions className={"btn low_button extra"}></LowerOptions>
-          <LowerOptions className={"btn low_button no_ingredientes"}></LowerOptions>
-        </div>
+
       </div>
 
-    
-  
+
+
 
 
     )
   }
 }
 
-export default ReusableComponents;
+export default App;
 
