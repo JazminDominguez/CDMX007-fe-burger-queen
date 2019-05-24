@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^3.4.1",
     "install": "^0.12.2",
+    "mobx-react": "^5.4.4",
     "npm": "^6.9.0",
     "react": "^16.8.6",
     "react-bootstrap": "^0.32.4",

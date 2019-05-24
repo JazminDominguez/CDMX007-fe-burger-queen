@@ -6,7 +6,8 @@
         "time": "breakfast",
         "price": 5,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/caf%C3%A9.png"
     },
     {
         "id": "b2",
@@ -15,7 +16,8 @@
         "time": "breakfast",
         "price": 7,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/caf%C3%A9_leche.png"
     },
     {
         "id": "b3",
@@ -24,7 +26,8 @@
         "time": "breakfast",
         "price": 10,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/sandwich.png"
     },
     {
         "id": "b4",
@@ -37,12 +40,13 @@
     },
     {
         "id": "m1",
-        "name": "hamburguesa simple",
+        "name": "hamburguesa sencilla",
         "type": "food",
         "time": "meal",
         "price": 10,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/burger3.png"
     },
     {
         "id": "m2",
@@ -51,7 +55,8 @@
         "time": "meal",
         "price": 15,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/burger3.png"
     },
     {
         "id": "m3",
@@ -60,7 +65,8 @@
         "time": "meal",
         "price": 5,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/papas.png"
     },
     {
         "id": "m4",
@@ -69,7 +75,8 @@
         "time": "meal",
         "price": 5,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/aros_cebolla.png"
     },
     {
         "id": "m5",
@@ -78,7 +85,8 @@
         "time": "meal",
         "price": 5,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img":"https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/agua.png"
     },
     {
         "id": "m6",
@@ -87,7 +95,8 @@
         "time": "meal",
         "price": 7,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img":"https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/agua.png"
     },
     {
         "id": "m7",
@@ -96,7 +105,8 @@
         "time": "meal",
         "price": 7,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/refresco.png"
     },
     {
         "id": "m8",
@@ -105,7 +115,8 @@
         "time": "meal",
         "price": 10,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/refresco.png"
     },
     {
         "id": "ext1",
@@ -114,7 +125,8 @@
         "time": "any",
         "price": 1,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/queso.png"
     },
     {
         "id": "ext2",
@@ -123,43 +135,48 @@
         "time": "any",
         "price": 1,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/huevo.png"
     },
     {
         "id": "ing1",
-        "name": "lechuga",
+        "name": "S/N lechuga",
         "type": "ingredients",
         "time": "any",
         "price": 0,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/lechuga.png"
     },
     {
         "id": "ing2",
-        "name": "cebolla",
+        "name": "S/N cebolla",
         "type": "ingredients",
         "time": "any",
         "price": 0,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img":"https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/cebolla.png"
     },
     {
         "id": "ing3",
-        "name": "pepinillos",
+        "name": "S/N pepinillos",
         "type": "ingredients",
         "time": "any",
         "price": 0,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img":"https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/pepino.png"
     },
     {
         "id": "ing4",
-        "name": "jitomate",
+        "name": "S/N jitomate",
         "type": "ingredients",
         "time": "any",
         "price": 0,
         "quantity": 0,
-        "selected": false
+        "selected": false,
+        "img": "https://raw.githubusercontent.com/JazminDominguez/CDMX007-fe-burger-queen/master/src/icons/jitomate.png"
     }  
 
 ]}
