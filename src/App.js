@@ -95,7 +95,7 @@ if (this.state.ticketSum.length !== 0) {
         id={itemList.id}
         className={"btn text-break basicBurger menuButtonSize"} 
         onClick={()=>this.idButtons(itemList)}>
-          <img className="menuButton_inline" src={itemList.img}></img><span className="menuButton_inline buttonText">{itemList.name}</span></button>
+          <img className="menuButton_inline" src={itemList.img}></img><span></span></button>
     })
     //ingredientes---
     let ingredientsFilter = this.state.itemList.filter((itemList, i) => {
@@ -105,9 +105,9 @@ if (this.state.ticketSum.length !== 0) {
       return <button 
       key={itemList.id}
       id={itemList.id}
-      className={"btn text-break basicBurger menuButtonSize"} 
+      className={"btn text-break no_ing menuButtonSize"} 
       onClick={()=>this.idButtons(itemList)}>
-        <img className="menuButton_inline" src={itemList.img}></img><span className="menuButton_inline buttonText">{itemList.name}</span></button>
+        <img className="menuButton_inline" src={itemList.img}></img><span></span></button>
   })
     //extras---
     let extrasFilter = this.state.itemList.filter((itemList, i) => {
@@ -117,9 +117,9 @@ if (this.state.ticketSum.length !== 0) {
       return <button 
       key={itemList.id}
       id={itemList.id}
-      className={"btn text-break basicBurger menuButtonSize"} 
+      className={"btn text-break extra menuButtonSize"} 
       onClick={()=>this.idButtons(itemList)}>
-        <img className="menuButton_inline" src={itemList.img}></img><span className="menuButton_inline buttonText">{itemList.name}</span></button>
+        <img className="menuButton_inline" src={itemList.img}></img><span ></span></button>
   })
       //guarnición---
     let addingsFilter = this.state.itemList.filter((itemList, i) => {
@@ -129,9 +129,9 @@ if (this.state.ticketSum.length !== 0) {
       return <button 
       key={itemList.id}
       id={itemList.id}
-      className={"btn text-break basicBurger menuButtonSize"} 
+      className={"btn text-break guarnicion menuButtonSize"} 
       onClick={()=>this.idButtons(itemList)}>
-        <img className="menuButton_inline" src={itemList.img}></img><span className="menuButton_inline buttonText">{itemList.name}</span></button>
+        <img className="menuButton_inline" src={itemList.img}></img><span></span></button>
   })
       //bebidas---
     let drinksFilter = this.state.itemList.filter((itemList, i) => {
@@ -141,9 +141,9 @@ if (this.state.ticketSum.length !== 0) {
       return <button 
       key={itemList.id}
       id={itemList.id}
-      className={"btn text-break basicBurger menuButtonSize"} 
+      className={"btn text-break bebida menuButtonSize"} 
       onClick={()=>this.idButtons(itemList)}>
-        <img className="menuButton_inline" src={itemList.img}></img><span className="menuButton_inline buttonText">{itemList.name}</span></button>
+        <img className="menuButton_inline" src={itemList.img}></img><span></span></button>
   })
 
 
