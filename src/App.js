@@ -181,7 +181,7 @@ if (this.state.ticketSum.length !== 0) {
           <div className="ticket_icon_user">
          <div className="user_icon icons"  id="uicon"></div>
           <div className="client_name fuente d-inline" id="client">
-                <input type="text" class="input-box fuente" value={this.state.client}  onChange={this.handleChange.bind(this)} placeholder="Nombre del cliente"></input> 
+                <input type="text" className="input-box fuente" value={this.state.client}  onChange={this.handleChange.bind(this)} placeholder="Nombre del cliente"></input> 
                 </div>
                 </div>
         
