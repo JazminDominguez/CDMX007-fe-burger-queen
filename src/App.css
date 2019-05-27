@@ -10,16 +10,27 @@
 }
 
 .header_area{
- height: 70px;
+ height: 120px;
  width: 663px;
  position: fixed;
 }
 
 .title{
   background-color: rgb(56,64,74);
-height: 35px;
+height: 65px;
  width: 663px;
  }
+
+.input-box{
+  background-color: rgb(36,46,58);
+  width: 160px;
+}
+.logo_burger{
+  position: relative;
+ 
+}
+
+
 
  .numbers{
   background-color: rgb(36,46,58);
@@ -35,6 +46,14 @@ height: 35px;
   text-align: center;
 
  }
+
+.menuButton_inline{
+  display: inline-block
+}
+.buttonText{
+  height: 80px;
+  width: 100px;
+}
  p.button_text{
   width: 100px;
   word-break: break-word;
@@ -60,6 +79,7 @@ height: 35px;
   margin-left: 31px;
   top: 120px;
   position: fixed;
+
 }
 
 
@@ -148,7 +168,7 @@ height: 35px;
 .ticket_icon_user{
   background-color: rgb(36,46,58);
   height: 40px;
-  width: 300px;
+  width: 280px;
 
 
 }
@@ -182,11 +202,31 @@ right: 210px;
 }
 
 .count_area{
-  height: 250px;
-  width: 60px;
+   height: 500px;
+  width: 280px;
+}
+.order{
+  position: relative;
+   left: 5px;
+}
+.order_elements{
+  width: 200px;
+  height: 30px;
 }
 
 .ticket_button_area{
-  position: relative;
-  bottom: 120px;
+  position: fixed;
+  bottom: 200px;
+}
+@media (min-width:1025px) { 
+  .App {
+    width: 1025px;
+  }
+
+  .foodSection{
+     width: 600px;
+  }
+  .list_placement{
+     width: 650px;
+   }
 }
