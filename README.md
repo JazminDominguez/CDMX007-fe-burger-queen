@@ -32,6 +32,8 @@ y la interacción natural entre el usuario y el producto.
 ## Diseño de experiencia de Usuario (UX)/ Prototipo
 
 [Prototipo](https://docs.google.com/presentation/d/1ZuETPiEz5vgDi07HP5v7x1YepmUEQHn4Tnv469jIKlk/edit#slide=id.g57ee78702d_0_12)
+[presentación](https://docs.google.com/presentation/d/1NCQt5CV7awQ4mwMpFHGhZcy8oaKWodoaPLZQDqI0550/edit?usp=sharing)
+
 ## Aspectos Técnicos
 Herramientas a utilizar:
 - Firebase
