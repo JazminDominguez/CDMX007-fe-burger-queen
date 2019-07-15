@@ -220,7 +220,7 @@ right: 210px;
 }
 @media (min-width:1025px) { 
   .App {
-    width: 1025px;
+    width: 1240px;
   }
 
   .foodSection{
@@ -228,5 +228,8 @@ right: 210px;
   }
   .list_placement{
      width: 650px;
+   }
+   .title{
+    width: 1240px;  
    }
 }
